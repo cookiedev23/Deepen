@@ -17,7 +17,7 @@ function Header() {
           <SearchIcon className="text-[#818181] h-5 z-50" />
           <input
             type="text"
-            className="transition-all duration-100 bg-transparent placeholder-[#818181] outline-none text-[#d9d9d9] absolute inset-0 pl-11 border border-transparent w-full focus:border-[#6D86FF] rounded-lg focus:bg-black focus:shadow-lg"
+            className="transition-all text-sm duration-100 bg-transparent placeholder-[#818181] outline-none text-[#d9d9d9] absolute inset-0 pl-11 border border-transparent w-full focus:border-[#6D86FF] rounded-lg focus:bg-black focus:shadow-lg"
             placeholder="Search Deepen"
           />
         </div>

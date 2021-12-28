@@ -27,7 +27,7 @@ function CategoriesComp() {
               <p className="pl-3 text-white font-medium">{item.name}</p>
               <div
                 id="absoluteDiv"
-                class=" transition-all duration-100 absolute rounded-md mr-4 mt-2 p-2 px-6 bottom-0 left-0 top-0 right-0"
+                class=" transition-all duration-100 absolute rounded-lg mr-4 mt-2 p-2 px-6 bottom-0 left-0 top-0 right-0"
               ></div>
             </div>
           </div>

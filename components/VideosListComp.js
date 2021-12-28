@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useSession } from "next-auth/react";
 import { useState } from "react";
 import HoverVideoPlayer from "react-hover-video-player";
-import vid from "../images/sample.mp4";
+//import vid from "../images/sample.mp4";
 
 const categories = [
   { name: "Italiano", color: "#FF9F9F" },
@@ -38,7 +38,7 @@ function VideosListComp({ title, categoryName }) {
       <div className="flex">
         {test.map((item, ind) => (
           <div key={ind}>
-            <HoverVideoPlayer
+            {/*             <HoverVideoPlayer
               videoSrc={vid}
               pausedOverlay={
                 <img
@@ -57,7 +57,7 @@ function VideosListComp({ title, categoryName }) {
                   <div className="loading-spinner" />
                 </div>
               }
-            />
+            /> */}
             <div
               onMouseEnter={() => handleEnter()}
               onMouseLeave={() => handleLeave()}
