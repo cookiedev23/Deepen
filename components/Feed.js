@@ -42,13 +42,12 @@ function Feed() {
   return (
     <div className="flex-grow border-l border-r border-[#202020] max-w-full sm:ml-[73px] xl:ml-[240px]">
       <Header />
-      <div className="pb-72 px-3 pt-3 text-white">
-        <p className=" xl:text-2xl pb-1 font-semibold">In evidenza</p>
+      <div className="pb-72 px-5 pt-3 text-white">
         <Carousel />
         <CategoriesComp />
         <VideosListComp
           categoryName={"Deepen x "}
-          title={"I numeri primidsdsdsdsddd"}
+          title={"I numer iprimi sds dsdsd dd"}
         />
         {posts.map((post) => (
           <Post key={post.id} id={post.id} post={post.data()} />

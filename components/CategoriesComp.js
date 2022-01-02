@@ -7,16 +7,15 @@ function CategoriesComp() {
 
   return (
     <div className="">
-      <link rel="stylesheet" href="style.css" />
-      <div className="pb-1 pt-6 flex items-center justify-between">
-        <p className=" xl:text-2xl font-semibold">Categorie</p>
+      <div className="pb-1 pt-10 flex items-center justify-between">
+        <p className=" xl:text-xl font-medium">Categorie</p>
         <button className=" text-[#6D86FF] ">See all</button>
       </div>
       <div className="flex">
         {categories.map((item, ind) => (
           <div className="z-0 relative ">
             <div
-              className={`mr-4 flex items-center border-[#1D1D1D] border bg-black hover:bg-[#1D1D1D] mt-2 p-2 px-3 rounded-lg transition-all cursor-pointer  `}
+              className={`mr-4 flex items-center border-[#1D1D1D] border bg-black hover:bg-[#1D1D1D] mt-1 p-2 px-3 rounded-lg transition-all cursor-pointer  `}
               //style={{ backgroundColor: item.color }}
               key={ind}
             >

@@ -34,53 +34,26 @@ function VideosListComp({ title, categoryName }) {
 
   return (
     <div className="">
-      <p className=" pt-6 xl:text-2xl font-semibold">{categoryName}</p>
+      <p className=" pt-10 xl:text-xl font-medium">{categoryName}</p>
       <div className="flex">
         {test.map((item, ind) => (
           <div key={ind}>
-            {/*             <HoverVideoPlayer
-              videoSrc={vid}
-              pausedOverlay={
-                <img
-                  src="https://qph.fs.quoracdn.net/main-qimg-98504d6190580238f9c15962800aa659"
-                  alt=""
-                  style={{
-                    // Make the image expand to cover the video's dimensions
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                  }}
-                />
-              }
-              loadingOverlay={
-                <div className="loading-overlay">
-                  <div className="loading-spinner" />
-                </div>
-              }
-            /> */}
             <div
               onMouseEnter={() => handleEnter()}
               onMouseLeave={() => handleLeave()}
-              className={`hover:w-80 mt-3 mr-4 rounded-lg overflow-hidden w-56 bg-[#1D1D1D] cursor-pointer hover:scale-105 transition-all `}
+              className={`hover:w-80 mt-2 mr-4 rounded-lg overflow-hidden w-56 bg-[#1D1D1D] cursor-pointer hover:scale-105 transition-all `}
             >
-              {/*  {showVid && (
-                <video className="">
-                  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" />
-                </video>
-              )}
+              <img
+                className="object-contain w-full"
+                src={
+                  "https://qph.fs.quoracdn.net/main-qimg-98504d6190580238f9c15962800aa659"
+                }
+              />
 
-              {!hideImg && (
-                <img
-                  className="object-contain w-full max-h-[150px]"
-                  src={
-                    "https://qph.fs.quoracdn.net/main-qimg-98504d6190580238f9c15962800aa659"
-                  }
-                />
-              )} */}
               <div className="w-full bg-blue-500 h-1 " />
               <div className="px-2">
                 <div>
-                  <p className="font-medium text-lg ">{title}</p>
+                  <p className="font-medium text-lg pt-1 ">{title}</p>
                 </div>
                 <div className="pt-2 flex items-center">
                   <img
@@ -93,7 +66,7 @@ function VideosListComp({ title, categoryName }) {
                 </div>
                 <div className="flex pt-3 pb-2 ">
                   {categories.map((item, ind) => (
-                    <div className="bg-[#232323] mr-2 p-1 rounded-lg ">
+                    <div className="bg-[#2d2d2d] mr-2 px-1.5 p-1 rounded-lg ">
                       <p className="text-[#8B8B8B] font-medium text-xs">
                         {item.name}
                       </p>

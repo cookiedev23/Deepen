@@ -25,4 +25,7 @@
   .categoryLink {
     @apply mr-2 w-full h-full rounded-lg transition-all cursor-pointer;
   }
+  .headerIconsButton {
+    @apply rounded-lg p-1 hover:bg-[#1D1D1D] transition-all;
+  }
 }
